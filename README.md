@@ -2,6 +2,7 @@
 
 ## Prerequisites
 ### Install Miniconda
+- You must have `python` installed on your machine.
 - Install [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)
 - Ensure `conda` is installed by running `conda --version`. You should see answer similar to following
 ```sh
@@ -32,6 +33,12 @@ pip 23.3.1 from /opt/homebrew/Caskroom/miniconda/base/envs/sflake_env/lib/python
 - Install the project dependencies
 ```sh
 pip install -r requirements.txt
+```
+
+## Run the project
+- Run the project
+```sh
+python src/main.py
 ```
 
 ## Other Resources
