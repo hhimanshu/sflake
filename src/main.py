@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get the value of the KEY key from the .env file
-key_value = os.getenv('KEY')
+# Get all the keys from the .env file
+keys = os.environ.keys()
 
-# Print the value to the console
-print(key_value)
+# Print the values of all the keys to the console
+for key in keys:
+    print(os.getenv(key))
