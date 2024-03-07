@@ -34,7 +34,7 @@ pip 23.3.1 from /opt/homebrew/Caskroom/miniconda/base/envs/sflake_env/lib/python
 pip install -r requirements.txt
 ```
 
-## Other Resourcs
+## Other Resources
 - To list the conda environments
 ```sh
 conda env list
