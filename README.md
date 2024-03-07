@@ -36,6 +36,13 @@ pip install -r requirements.txt
 ```
 
 ## Run the project
+- Copy environment variables from `.env.sample` to `.env` and update the values
+```sh
+cp .env.sample .env
+```
+
+Update the values in `.env` file according to your environment.
+
 - Run the project
 ```sh
 python src/main.py
