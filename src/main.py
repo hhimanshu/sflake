@@ -18,7 +18,7 @@ def main():
     create_database(conn=conn, name="DEMO_DB")
 
     display_connection_details(conn)
-    sales_creator = BusinessUnitCreator("Sales")
+    sales_creator = BusinessUnitCreator("SALES")
 
 
 
