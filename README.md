@@ -2,6 +2,7 @@
 
 ## Prerequisites
 ### Install Miniconda
+- You must have `python` installed on your machine.
 - Install [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)
 - Ensure `conda` is installed by running `conda --version`. You should see answer similar to following
 ```sh
@@ -18,19 +19,36 @@ conda create -n sflake_env python=3.11
 conda activate sflake_env
 ```
 
-### Install Poetry
-- Install [`pipx`](https://pipx.pypa.io/stable/installation/)
-- Install [`poetry`](https://python-poetry.org/docs/#installing-with-pipx) using `pipx`
+### Install `pip`
+- Install [`pip`](https://pypi.org/project/pip/)
 ```sh
-pipx install poetry
+conda install pip
 ```
-- Ensure `poetry` is installed by running `poetry --version`. You should see answer similar to following
+- Ensure `pip` is installed by running `pip --version`. You should see answer similar to following
 ```sh
-poetry --version
-Poetry (version 1.8.2)
+pip --version
+pip 23.3.1 from /opt/homebrew/Caskroom/miniconda/base/envs/sflake_env/lib/python3.11/site-packages/pip (python 3.11)
+```
+### Install project dependencies
+- Install the project dependencies
+```sh
+pip install -r requirements.txt
 ```
 
-## Other Resourcs
+## Run the project
+- Copy environment variables from `.env.sample` to `.env` and update the values
+```sh
+cp .env.sample .env
+```
+
+Update the values in `.env` file according to your environment.
+
+- Run the project
+```sh
+python src/main.py
+```
+
+## Other Resources
 - To list the conda environments
 ```sh
 conda env list
@@ -38,4 +56,8 @@ conda env list
 - To deactivate the environment
 ```sh
 conda deactivate
+```
+- To remove the environment
+```sh
+conda env remove --name sflake_env
 ```
