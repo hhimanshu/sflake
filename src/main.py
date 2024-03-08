@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from sflake import create_database, display_connection_details, get_connection
+from lib.sflake import create_database, display_connection_details, get_connection
 from snowflake.connector import SnowflakeConnection
 from snowflake.core import Root
 from snowflake.core.database import Database
