@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from commands.setup_business_unit import BusinessUnitCreator
 from lib.sflake import create_database, display_connection_details, get_connection
 from snowflake.connector import SnowflakeConnection
 from snowflake.core import Root
@@ -17,6 +18,8 @@ def main():
     create_database(conn=conn, name="DEMO_DB")
 
     display_connection_details(conn)
+    sales_creator = BusinessUnitCreator("Sales")
+
 
 
 if __name__ == "__main__":
